@@ -1,0 +1,46 @@
+<div class="home">
+    <div class="head">
+       <div class="he-icon"><mat-icon aria-hidden="false" class="custome-icon" aria-label="Example dashboard icon" fontIcon="dashboard"></mat-icon></div>
+        <div class="he-text">{{title}}</div> 
+        <div class="sec-he">{{subTitle}}</div> 
+    </div>
+    <div>
+       <div fxLayout="row">
+        <div class="padding-1" fxFlex="25" *ngFor="let card of cards">
+            <mat-card>
+                <div fxLayoutAlign="end start">
+                    <mat-card-header>
+                        <mat-icon class="po-ab icn-colo icon-size">{{card.icon}}</mat-icon>
+                    </mat-card-header>
+                </div>
+                <div>
+                    <mat-card-header>
+                        <mat-card-title class="card-number">{{card.number}}</mat-card-title>
+                        <mat-card-subtitle class="card-order">{{card.order}}</mat-card-subtitle>
+                      </mat-card-header>
+                </div>
+              </mat-card>
+        </div>
+       </div>
+    </div>
+    <div class="back-color mar-1">
+        <div class="head mar">
+            <div class="he-icon"><mat-icon aria-hidden="false" class="custome-icon" aria-label="Example dashboard icon" fontIcon="dashboard"></mat-icon></div>
+            <div class="he-text">{{titleSecond}}</div> 
+        </div>
+        <mat-divider></mat-divider>
+        <div fxLayout="row wrap">
+            <div class="padding-1" fxFlex="25" *ngFor="let blog of apiData">
+                <mat-card class="example-card">
+                    <img class="width-50 mar-1" mat-card-image src="../../../assets/Rectangle 907.png" alt="Photo of a Shiba Inu" alt="Photo of a Shiba Inu">
+                    <div>
+                        <mat-card-header>
+                            <mat-card-title class="blog-title">{{blog.name}}</mat-card-title>
+                            <mat-card-subtitle class="blog-des">{{blog.company.name}}</mat-card-subtitle>
+                          </mat-card-header>
+                    </div>
+                  </mat-card>
+            </div>
+        </div>
+    </div>   
+</div>

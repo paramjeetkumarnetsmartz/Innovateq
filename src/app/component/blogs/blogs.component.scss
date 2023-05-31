@@ -1,0 +1,58 @@
+.blogs{
+    .head{
+        margin: 1em;
+        padding: 1em;
+        background-color: #ffffff;
+        border-radius: 0.5em;
+        
+        .custome-icon{
+            font-size: 14px;
+            margin-top: 10px;
+        }
+        .he-icon{
+            float: left;
+        }
+        .he-text{
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 19px;
+            color: #506E85;
+            padding-top: 7px;
+            margin-bottom: 10px;
+        }
+        .sec-he{
+            padding: 0.5em 0.5em 0.5em 2.5em;
+            background-color: #f9fbfd; 
+        }    
+    }
+    .card-icon{
+        position: absolute;
+        margin-top: -0.1em;
+      }
+    .card-text{
+        padding-left: 2em;
+      }
+    .padding-1{
+        padding: 1em;
+    }
+    .card-gap {
+        margin-top: 2em !important;
+    }
+    .blog-title{
+      font-family: 'Roboto', sans-serif !important;
+      font-size: 18px;
+    }
+    .blog-subtitle{
+      font-family: 'Roboto', sans-serif !important;
+      font-size: 14px;
+      font-weight: 400;
+    }
+    .blog-btn{
+      font-family: 'Roboto', sans-serif !important;
+      font-size: 14px;
+      font-weight: 400;
+      color: #47A1F6;
+      text-decoration: underline;
+    }
+}

@@ -1,0 +1,47 @@
+.example-icon {
+    padding: 0 14px;
+  }
+  /* #docregion toolbar-position-content-style */
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+
+  .example-container {
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #F0F5FB;
+  }
+
+  .wid-15 {
+    width: 15%;
+  }
+
+  .wid-85 {
+    width: 85%;
+  }
+
+  .sideNav {
+    .head {
+        border-left: 5px solid #47a1f6;
+        padding: 1em;
+    }
+    .text {
+        padding: 0em 0em 0em 3.2em
+    }
+    .po-ab{
+        position: absolute;
+    }
+
+   .sideNav a:active{
+    background: #47A1F6;
+    color: #fff;
+   } 
+  }
+  .sideNav a:active, .sideNav a:focus{
+    background: #47A1F6 !important;
+    color: #fff !important;
+   } 
+   

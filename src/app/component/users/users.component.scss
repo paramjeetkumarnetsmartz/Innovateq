@@ -1,0 +1,100 @@
+.user {
+  .head {
+    margin: 10px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 0.5em;
+
+    .custome-icon{
+            font-size: 16px;
+            margin-top: 7px;
+        }
+
+    .he-icon{
+            float: left;
+        }
+        .he-text{
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 19px;
+            color: #506E85;
+            padding-top: 7px;
+            margin-bottom: 10px;
+        }
+
+    .sec-he {
+      padding: 0.5em 0.5em 0.5em 2.5em;
+      background-color: #f9fbfd;
+    }
+  }
+
+  .usercard {
+    .padding-1 {
+      padding: 1em;
+    }
+
+    .img-card-set {
+      margin-top: -3em;
+    }
+
+    .user-fnt {
+      font-family: 'Roboto', sans-serif !important;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 18px;
+      color: #47A1F6;
+      padding-top: 2em;
+    }
+
+    .user-desi {
+      font-family: 'Roboto', sans-serif !important;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 14px;
+      color: #506E85;
+      padding: 1em;
+    }
+    .icon-style{
+      position: absolute;
+      margin-top: 6em;
+      margin-left: -2em;
+      border-radius: 50%;
+      height: 20%;
+      width: 15%;
+      background-color: #47A1F6;
+      color: #ffffff;
+    }
+    .icon-posi{
+      padding-left: 0.4em;
+      padding-top: 0.3em;
+    }
+  }
+  table {
+    width: 100%;
+  }
+  .tableView{
+    margin: 1em;
+    .width-15{
+      width: 15%;
+    }
+    .fir-image-color {
+      border: 5px solid #47A1F6;
+      border-radius: 50%;
+  }
+  .wid-10{
+    width: 10%;
+    text-align: right;
+  }
+  .img-style-set{
+      width: 5em;
+      top: 3px;
+  }
+  .text-color{
+    color: #47A1F6;
+    font-weight: 600;
+  }
+  }
+}

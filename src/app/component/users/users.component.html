@@ -1,0 +1,90 @@
+<div class="user">
+    <div class="head">
+        <div fxLayout="row">
+            <div fxFlex="90">
+                <!-- <span class="he-icon"><mat-icon aria-hidden="false" aria-label="Example dashboard icon"
+                        fontIcon="dashboard"></mat-icon></span>
+                <span class="he-text">{{title}}</span> -->
+                <div class="head">
+                <div class="he-icon"><mat-icon aria-hidden="false" class="custome-icon" aria-label="Example dashboard icon" fontIcon="dashboard"></mat-icon></div>
+                    <div class="he-text">{{title}}</div> 
+                </div>
+            </div>
+            <div fxFlex="10" style="margin-top: 20px;">
+                <button (click)="importFileUrl(true)" class="pad-left-3" mat-icon-button color="primary"
+                    aria-label="Example icon button with a list icon">
+                    <mat-icon>list</mat-icon>
+                </button>
+                <button (click)="importFileUrl(false)" mat-icon-button color="primary" aria-label="Example icon button with a view_module icon">
+                    <mat-icon>view_module</mat-icon>
+                </button>
+            </div>
+        </div>
+
+        <div class="sec-he">Total Users : {{subTitle}}</div>
+        <div>
+
+        </div>
+    </div>
+    <div class="usercard" [hidden]="!tabView">
+        <div fxLayout="row wrap" layout-wrap class="usercard">
+            <div fxFlex="20" *ngFor="let user of userData" class="padding-1" style="padding-top: 5em;">
+                <mat-card>
+                    <div fxLayoutAlign="center center">
+                        <div class="img-card-set">
+                            <img class="width-50" mat-card-image src="../../../assets/Ellipsem.png" alt="Photo of a Shiba Inu">
+                            <span class="icon-style">
+                                <mat-icon class="icon-posi">send</mat-icon>
+                            </span>
+                        </div>
+                    </div>
+                    <div style="text-align: center;">
+                        <div class="user-fnt">{{user.name}}</div>
+                        <div class="user-desi">{{user.company.name}}</div>
+                    </div>
+                </mat-card>
+            </div>
+        </div>
+    </div>
+    <div [hidden]="tabView">
+        <div class="mat-elevation-z8 tableView">
+            <table mat-table [dataSource]="dataSource">
+          
+              <!-- Position Column -->
+              <ng-container matColumnDef="position">
+                <th mat-header-cell *matHeaderCellDef> </th>
+                <td mat-cell *matCellDef="let element" class="wid-10">
+                    <img class="width-15 img-style-set fir-image-color" mat-card-image src="../../../assets/Ellipsem.png" alt="Photo of a Shiba Inu">   
+                </td>
+              </ng-container>
+          
+              <!-- Name Column -->
+              <ng-container matColumnDef="name">
+                
+                <th mat-header-cell *matHeaderCellDef> Name </th>
+                <td mat-cell *matCellDef="let element" class="text-color"> {{element.name}} </td>
+              </ng-container>
+          
+              <!-- Weight Column -->
+              <ng-container matColumnDef="designation">
+                <th mat-header-cell *matHeaderCellDef> Designation </th>
+                <td mat-cell *matCellDef="let element"> {{element.designation}} </td>
+              </ng-container>
+          
+              <!-- Symbol Column -->
+              <ng-container matColumnDef="joiningdate">
+                <th mat-header-cell *matHeaderCellDef> Joining Date </th>
+                <td mat-cell *matCellDef="let element"> 12 july 2020 </td>
+              </ng-container>
+          
+              <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+              <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+            </table>
+          
+            <mat-paginator [pageSizeOptions]="[5, 10, 20]"
+                           showFirstLastButtons
+                           aria-label="Select page of periodic elements">
+            </mat-paginator>
+          </div>
+    </div>
+</div>
