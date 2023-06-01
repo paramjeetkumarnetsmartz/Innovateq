@@ -19,7 +19,9 @@
     <div class="head">MENU</div>
     <mat-nav-list>
       <a *ngFor="let route of routes"
-         mat-list-item  
+         mat-list-item 
+         routerLinkActive="active" 
+         [routerLinkActiveOptions]="{exact: true}" 
          [routerLink]="route.path" 
          > 
          <span><mat-icon class="po-ab">{{route.icon}}</mat-icon></span>

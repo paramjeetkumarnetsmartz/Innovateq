@@ -22,7 +22,7 @@ import { BlogsComponent } from './component/blogs/blogs.component';
 import { HomeComponent } from './component/home/home.component';
 import { UsersComponent } from './component/users/users.component';
 export const routes =  [
-  { path: 'home', component: HomeComponent, icon: 'dashboard', label: 'Home' },
+  { path: '', component: HomeComponent, icon: 'dashboard', label: 'Home' },
   { path: 'user', component: UsersComponent, icon: 'dashboard', label: 'User' },
   { path: 'blogs', component: BlogsComponent, icon: 'dashboard', label: 'Blogs' }
  ]; 
