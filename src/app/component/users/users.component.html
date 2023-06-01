@@ -1,7 +1,7 @@
 <div class="user">
     <div class="head">
         <div fxLayout="row">
-            <div fxFlex="90">
+            <div fxFlex="60">
                 <!-- <span class="he-icon"><mat-icon aria-hidden="false" aria-label="Example dashboard icon"
                         fontIcon="dashboard"></mat-icon></span>
                 <span class="he-text">{{title}}</span> -->
@@ -10,7 +10,7 @@
                     <div class="he-text">{{title}}</div> 
                 </div>
             </div>
-            <div fxFlex="10" style="margin-top: 20px;">
+            <div fxFlex="40" style="margin-top: 20px;" style="text-align: right;">
                 <button (click)="importFileUrl(true)" class="pad-left-3" mat-icon-button color="primary"
                     aria-label="Example icon button with a list icon">
                     <mat-icon>list</mat-icon>
@@ -27,7 +27,7 @@
         </div>
     </div>
     <div class="usercard" [hidden]="!tabView">
-        <div fxLayout="row wrap" layout-wrap class="usercard">
+        <div fxLayout="row wrap" fxLayout.xs="column" layout-wrap class="usercard">
             <div fxFlex="20" *ngFor="let user of userData" class="padding-1" style="padding-top: 5em;">
                 <mat-card>
                     <div fxLayoutAlign="center center">
@@ -47,6 +47,14 @@
         </div>
     </div>
     <div [hidden]="tabView">
+        <section layout-align="end center" layout-padding flex>
+            <div layout="row" layout-align="start center" flex>
+                <div class="input-group align-in search-sty">
+                    <span class="input-group-addon" id="addon"><mat-icon class="icon-posi-in">search</mat-icon></span>
+                    <input  type="text" class="form-control align-search-in" placeholder="Search Entry" aria-describedby="addon">
+                </div>
+            </div>
+        </section>
         <div class="mat-elevation-z8 tableView">
             <table mat-table [dataSource]="dataSource">
           

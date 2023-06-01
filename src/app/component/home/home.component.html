@@ -5,8 +5,8 @@
         <div class="sec-he">{{subTitle}}</div> 
     </div>
     <div>
-       <div fxLayout="row">
-        <div class="padding-1" fxFlex="25" *ngFor="let card of cards">
+       <div fxLayout="row wrap" fxLayout.xs="column">
+        <div class="padding-1" fxFlex="25" fxLayout.xs="column" *ngFor="let card of cards">
             <mat-card>
                 <div fxLayoutAlign="end start">
                     <mat-card-header>
@@ -29,8 +29,8 @@
             <div class="he-text">{{titleSecond}}</div> 
         </div>
         <mat-divider></mat-divider>
-        <div fxLayout="row wrap">
-            <div class="padding-1" fxFlex="25" *ngFor="let blog of apiData">
+        <div fxLayout="row wrap" fxLayout.xs="column">
+            <div class="padding-1" fxFlex="25"  *ngFor="let blog of apiData">
                 <mat-card class="example-card">
                     <img class="width-50 mar-1" mat-card-image src="../../../assets/Rectangle 907.png" alt="Photo of a Shiba Inu" alt="Photo of a Shiba Inu">
                     <div>

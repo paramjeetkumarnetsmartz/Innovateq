@@ -16,17 +16,18 @@
     <!-- card layout start -->
     
 
-    <div fxLayout="row wrap">
-        <div class="padding-1" fxFlex="50" *ngFor="let blog of userData">
+    <div fxLayout="row wrap" fxLayout.xs="column">
+        <div class="padding-1" fxFlex="50" *ngFor="let blog of userData" rowHeight="4:3">
             <mat-card class="example-card">
-                <div fxLayout="row">
-                    <div fxLayout="50">
+                
+                <div fxLayout="row" fxLayout.xs="column">
+                    <div fxLayout="50" >
                         <img mat-card-image class="img-responsive" src="../../../assets/oil-gas-rigs-vector-illustration_92926-186 1.png" alt="Photo of a Shiba Inu">
                     </div>
                     <div>
                         <mat-card-header>
-                            <mat-card-title class="blog-title">{{blog.title}}</mat-card-title>
-                            <mat-card-subtitle class="blog-subtitle">{{blog.body}}</mat-card-subtitle>
+                            <mat-card-title style="min-height: 125px;" class="blog-title">{{blog.title}}</mat-card-title>
+                            <mat-card-subtitle style="min-height: 180px;" class="blog-subtitle">{{blog.body}}</mat-card-subtitle>
                         </mat-card-header>
                         <mat-card-content class="card-gap">
                             <div>
